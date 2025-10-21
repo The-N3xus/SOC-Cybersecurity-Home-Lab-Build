@@ -9,8 +9,7 @@ This repository documents the design, build, and management of a self-contained 
 - Docker version: 28.2.2
 ## IP Addresses:
 - 4GB PC: 192.168.0.179
-## Challenges Faced:
-- This PC didn't have an Ethernet port so I had to use WIFI and so the interface that I needed to use changed from "enp3s0" to "wl01" but I hadn't taken that into account so that proved to be a bit of an issue down the line
+
 
 ## What I learned:
 - how to install Ubuntu Server
@@ -28,3 +27,32 @@ This repository documents the design, build, and management of a self-contained 
 ### Device IPs:
 - 4GB PC (Ubuntu Server): 192.168.0.150 (static)
 - Previous DHCP IP: 192.168.0.179
+
+## Pi-hole Configuration - Complete ✅
+
+### DNS Configuration Strategy:
+Individual device configuration (not router-wide)
+
+### Devices Using Pi-hole:
+1. **4GB PC (Ubuntu Server)**: 127.0.0.1 (localhost)
+2. **All-in-One PC**: 192.168.0.150
+3. **MacBook**: 192.168.0.150
+
+### First 24 Hours Statistics:
+- Total Queries: [check tomorrow]
+- Queries Blocked: [check tomorrow]
+- Block Percentage: [check tomorrow]
+
+### Interesting Findings:
+- Most blocked domain: [check Query Log]
+- Most queried domain: [check dashboard]
+- Number of devices detected: [check Tools → Network]
+
+### Screenshots:
+- [Dashboard overview]
+- [Query Log sample]
+- [Top Blocked Domains]
+
+
+## Challenges Faced:
+- This PC didn't have an Ethernet port so I had to use WIFI and so the interface that I needed to use changed from "enp3s0" to "wl01" but I hadn't taken that into account so that proved to be a bit of an issue down the line
